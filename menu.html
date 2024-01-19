@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px auto;
+        }
+        
+        .wrapper {
+            height: 600px;
+            width: 900px;
+            background-color: antiquewhite;
+            border: 1px solid green;
+        }
+        
+        .header {
+            height: 150px;
+            width: 900px;
+            border-bottom: 1px solid green;
+        }
+        
+        .nav {
+            height: 50px;
+            width: 900px;
+            border-bottom: 1px solid green;
+            position: relative;
+        }
+        
+        .menu li {
+            height: 50px;
+            width: 150px;
+            float: left;
+            list-style-type: none;
+            line-height: 50px;
+            text-indent: 15px;
+            position: relative;
+            /* border-right: 1px solid green; */
+        }
+        
+        .menu li:hover {
+            background-color: chartreuse;
+        }
+        /* Canh chinh menu
+        
+        .menu li:nth-child(1) {
+            position: absolute;
+            top: 0px;
+            right: 100px;
+        }
+        
+        .menu li:nth-child(2) {
+            position: absolute;
+            top: 0px;
+            right: 100px;
+        }
+        
+        .menu li:nth-child(3) {
+            position: absolute;
+            top: 0px;
+            right: 100px;
+        }
+        
+        .menu li:nth-child(4) {
+            position: absolute;
+            top: 0px;
+            right: 290px;
+        }
+        
+        .menu li:nth-child(5) {
+            position: absolute;
+            top: 0px;
+            right: 100px;
+        } */
+        
+        li a:hover {
+            font-weight: bold;
+            color: red;
+        }
+        
+        li a {
+            text-decoration: none;
+            color: blue;
+        }
+        
+        .menu li .sub-menu {
+            display: none;
+            position: absolute;
+        }
+        
+        li:hover>.sub-menu {
+            display: block;
+        }
+        
+        .menu li .sub-menu .sub-menu {
+            display: none;
+        }
+        
+        .sub-menu li:hover .sub-menu {
+            display: block;
+            top: 0px;
+            left: 150px;
+        }
+        
+        .content {
+            height: 300px;
+            width: 900px;
+            border-bottom: 1px solid green;
+        }
+        
+        .footer {
+            height: 95px;
+            width: 900px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="./blue-background-7470781_640.jpg" alt="" , height="150" , width="900">
+        </div>
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="https://github.com/tthtung">GITHUB</a></li>
+                <li><a href="#">ITEM2</a>
+                    <ul class="sub-menu">
+                        <li><a href="">ITEM2.1</a></li>
+                        <li><a href="">ITEM2.2</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">ITEM2.2.a</a></li>
+                                <li><a href="#">ITEM2.2.b</a></li>
+                                <li><a href="#">ITEM2.2.c</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">ITEM2.3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ITEM3</a></li>
+                <li><a href="#">ITEM4</a></li>
+                <li><a href="#">ITEM5</a></li>
+            </ul>
+        </div>
+        <div class="content"></div>
+        <div class="footer"></div>
+    </div>
+</body>
+
+</html>
